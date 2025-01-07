@@ -1,0 +1,1 @@
+The CSS code has an unexpected behavior when using the :hover pseudo-class on a nested element within a flex container. The hover effect applies to the parent element rather than the nested element. This is because the parent flex container is capturing the hover event before it reaches the nested element. 
