@@ -1,0 +1,32 @@
+/* bugSolution.css */
+.flex-container {
+  display: flex;
+  pointer-events: none; /* Allow hover events to pass through to child elements */
+}
+
+.flex-container > div {
+  pointer-events: auto; /* Enable hover events for child elements */
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}
+
+.flex-container > div:hover {
+  background-color: lightgreen;
+}
+
+/*Alternative solution*/
+/*.flex-container {
+  display: flex;
+}
+
+.flex-container > div {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}
+
+.flex-container > div:hover {
+  background-color: lightgreen;
+  cursor: pointer; /* Explicitly set the cursor to indicate interactivity */
+}*/
